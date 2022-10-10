@@ -14,7 +14,7 @@ if __name__ == '__main__':
     user_input = input('Введите номер команды из списка, чтобы запустить ее (q to exit): ')
     while True:
         if user_input == "q":
-            print("Конец работы")
+            print("Конец работы ")
             break
         elif user_input == "0":
             print("Список команд: ")
