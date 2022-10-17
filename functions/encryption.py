@@ -6,8 +6,8 @@ ASCII_UPPER = list(string.ascii_uppercase)
 LEN_ALP = len(ASCII_UPPER)
 
 
-def encrypt_by_tsezar(text: str, key: int = 0) -> str:
-    """Encrypt text by caesar ciphers.
+def encrypt_by_tsezar_en(text: str, key: int = 0) -> str:
+    """Encrypt only english text by caesar ciphers.
 
     Args:
         text: str - text fot encrypt.
