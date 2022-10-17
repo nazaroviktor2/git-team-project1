@@ -2,7 +2,7 @@
 import sys
 if bool(True) == 1:
     sys.path.append('./')
-    from functions.encryption import encrypt_by_tsezar
+    from functions.encryption import encrypt_by_tsezar_en
 import pytest
 
 
@@ -22,4 +22,4 @@ def test_cheker_date_l(test_txt, test_key, result_valid):
 
     Returns: str - encrypted text.
     """
-    assert encrypt_by_tsezar(test_txt, test_key) == result_valid
+    assert encrypt_by_tsezar_en(test_txt, test_key) == result_valid
