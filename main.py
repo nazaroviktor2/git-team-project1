@@ -1,6 +1,6 @@
 """Main file."""
 
-from functions.encryption import encrypt_by_tsezar
+from functions.encryption import encrypt_by_tsezar_en
 from functions.file import save_text_to_file
 
 if __name__ == '__main__':
@@ -30,7 +30,7 @@ if __name__ == '__main__':
             except ValueError:
                 print("Введен не верный ключ! Ключем может быть любое число ")
             else:
-                encrypt_text = encrypt_by_tsezar(text_for_encrypt, key)
+                encrypt_text = encrypt_by_tsezar_en(text_for_encrypt, key)
                 print("Зашифрованный текст: ")
                 print(encrypt_text)
                 file_name = input("Для сохрание текста в файл, ввидете имя файла иначе нажмите enter: ")
